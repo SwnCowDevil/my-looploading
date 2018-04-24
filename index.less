@@ -1,0 +1,75 @@
+@import '../../agrisz-params/1.0.0/common.less';
+
+
+.spot-container{
+	display: flex;
+ 	flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+
+  .pre-spot {
+  	
+    .public-spot {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      
+      border-radius: 50%;
+      box-sizing: border-box;
+    }
+    .static-spot {
+      border-radius: 50%;
+      box-sizing: border-box;
+    }
+    .circle-left-mask {
+
+      overflow: hidden;
+
+      .circle-left {
+      }
+    }
+    .circle-right-mask {
+
+      overflow: hidden;
+
+      .circle-right {
+
+      }
+    }
+  }
+}
+
+
+@keyframes left-rotate {
+  0% {
+    transform: rotate(0deg)
+  }
+  50% {
+    transform: rotate(0deg)
+  }
+  100% {
+    transform: rotate(180deg)
+  }
+}
+
+@keyframes right-rotate {
+  0% {
+    transform: rotate(0deg)
+  }
+  50% {
+    transform: rotate(180deg)
+  }
+  100% {
+    transform: rotate(180deg)
+  }
+}
+
+.do-left-rotate {
+  .adv-animation(left-rotate;3s;1;forwards);
+  animation-timing-function: linear;
+}
+.do-right-rotate {
+	.adv-animation(right-rotate;3s;1;forwards);
+  animation-timing-function: linear;
+
+}

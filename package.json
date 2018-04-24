@@ -1,0 +1,11 @@
+{
+  "name": "agrisz-looploading",
+  "version": "1.0.0",
+  "description": "the request of CZTNX",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "sunweinan",
+  "license": "ISC"
+}
